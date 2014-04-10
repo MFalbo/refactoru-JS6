@@ -1,7 +1,20 @@
 $(document).on('ready', function() {
 
 	$(document).on('click', '#show-form', function(){
-		$('#input-form').toggle();
+
+		$('#input-form').toggle({
+			
+			duration: 100,
+			start: function(){
+				if($('#show-form').text() === "Show Form"){
+					$('#show-form').text("Hide Form");
+				}
+				else{
+					$('#show-form').text("Show Form");
+				}
+			}
+		})
+
 	})
 
 	$('#input-form').submit(function(){
