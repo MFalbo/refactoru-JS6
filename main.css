@@ -1,0 +1,69 @@
+
+#input-form{
+
+	width: 45%;
+	display: none;
+
+}
+
+#page-update{
+	list-style: none;
+	border-bottom: 3px solid #CCC;
+	border-right: 3px solid #CCC;
+}
+
+#page-update li{
+
+	margin: 5px;
+}
+
+#page-update label{
+	display: inline-block;
+	text-align: right;
+	width: 40%;
+	margin-right: 10px;
+}
+
+#form-submit{
+	text-align: right;
+}
+
+#form-submit input{
+	margin-right: 87px;
+}
+
+.avatar{
+	height: 250px;
+	width: 250px;
+}
+
+.main-content{
+	overflow: hidden;
+	margin-top: 50px;
+}
+
+.left{
+	float: left;
+	width: 25%;
+	background-color: pink;
+	text-align: center;
+
+}
+
+.mid{
+	float: left;
+	width: 45%;
+	background-color: tan;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+
+}
+
+.right{
+	float: left;
+	width: 25%;
+	background-color: lightblue;
+	text-align: center;
+
+}

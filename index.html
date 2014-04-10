@@ -2,11 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Untitled</title>
+  <title>JS6-Hide-A-Form</title>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+
+	<form id="input-form">
+		<ul id="page-update">
+			<li><label>Name:</label><input id="name" type="text" name="name"></li>
+			<li><label>Bio:</label><input id="bio" type="text" name="Bio"></input></li>
+			<li><label>Favorite Books:</label><input id="books" type="text" name="favBooks"></input></li>
+			<li><label>Favorite Javascript Libraries:</label><input id="libs" type="text" name="favJSLang"></input></li>
+			<li id = "form-submit"><input type="submit" value="Submit"></li>
+		</ul>
+	</form>
+
+	<div class="main-container">
+
+		<h1 id="user-name">User Name</h1>
+
+		<img class="avatar" src="http://3.bp.blogspot.com/-arM6BnfSQU4/TjS0TfQHEII/AAAAAAAAAbI/5BJCal4fPlw/s640/kid+in+a+cape.jpg">
+		<button id="show-form">Show Form</button>
+		
+		<div class="main-content">
+		<div class="col left"><p id="bookPar">Favorite Books</p></div>
+		<div class="col mid"><p id="bioPar">BIO</p></div>
+		<div class="col right"><p id="jsPar">Favorite Javascript Libraries</p></div>
+		</div>
+		
+	</div>
+
+
 	
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="main.js"></script>
