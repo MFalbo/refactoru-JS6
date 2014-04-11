@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<form id="input-form">
+	<form id="input-form" class="hidden">
 		<ul id="page-update">
 			<li><label>Name:</label><input id="name" type="text" name="name"></li>
 			<li><label>Bio:</label><input id="bio" type="text" name="Bio"></input></li>
@@ -25,10 +25,25 @@
 		<img class="avatar shadow" src="http://3.bp.blogspot.com/-arM6BnfSQU4/TjS0TfQHEII/AAAAAAAAAbI/5BJCal4fPlw/s640/kid+in+a+cape.jpg">
 		<button id="show-form" class="shadow">Show Form</button>
 		
-		<div class="main-content">
-		<div class="col left shadow"><p id="bookPar">Favorite Books</p></div>
-		<div class="col mid shadow"><p id="bioPar">BIO</p></div>
-		<div class="col right shadow"><p id="jsPar">Favorite Javascript Libraries</p></div>
+		<div class="main-content row1">
+			<div class="col left shadow">
+				<h2>Favorite Books</h2>
+				<ul id="bookPar" class="hidden"></ul>
+			</div>
+			<div class="col mid shadow">
+				<h2>BIO</h2>
+				<p id="bioPar" class="hidden"></p>
+			</div>
+			<div class="col right shadow">
+				<h2>Favorite Javascript Libraries</h2>
+				<ul id="jsPar" class="hidden"></ul>
+			</div>
+		</div>
+
+		<div class="main-content row2">
+			<div class="col left shadow"><p>Other Info</p></div>
+			<div class="col mid shadow"><p>Other Info</p></div>
+			<div class="col right shadow"><p>Other Info</p></div>
 		</div>
 		
 	</div>

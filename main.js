@@ -55,9 +55,73 @@ $(document).on('ready', function() {
 
 	})
 
-		$('#name').blur(function(){$('#user-name').text($('#name').val())});
-		$('#bio').blur(function(){$('#bookPar').text($('#bio').val())});
-		$('#books').blur(function(){$('#bioPar').text($('#books').val())});
-		$('#libs').blur(function(){$('#jsPar').text($('#libs').val())});
+
+	$('#input-form').submit(function(){		
+
+		return false;
+
+	});
+
+// Update user name from form input
+	$('#name').blur(function(){
+		$('#user-name').text($('#name').val());
+		$('#name').val('');
+
+	});
+
+// -------------BOOK COLUMN------------
+// Update list of favorite books from form input
+	$('#books').blur(function(){
+
+		$('#bookPar').append("<li>" + $('#books').val() + "</li>");
+
+	});
+// Enable show and hide function of favorite books list
+	$('.left').click(function(){
+		$('#bookPar').slideToggle();
+	})
+
+// --------------Bio Column--------------
+// Update bio information from form input
+	$('#bio').blur(function(){$('#bioPar').text($('#bio').val())});
+// Enable show and hide function of bio section
+	$('.mid').click(function(){
+		$('#bioPar').slideToggle();
+	})
+
+// --------------Libraries Column-----------
+// Update favorite libraries from form input
+	$('#libs').blur(function(){
+
+		$('#jsPar').append("<li>" + $('#libs').val() + "</li>");
+
+	});
+// Enable show and hide function of libraries column
+	$('.right').click(function(){
+		$('#jsPar').slideToggle();
+	})
   
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
