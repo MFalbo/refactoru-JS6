@@ -70,7 +70,7 @@ body{
 	text-shadow: -2px 2px 2px #000;
 }
 
-.left{
+.left1, .left2{
 	float: left;
 	width: 25%;
 	background-color: #D3EB4B;
@@ -78,7 +78,7 @@ body{
 
 }
 
-.mid{
+.mid1, .mid2{
 	float: left;
 	width: 45%;
 	background-color: #41BFA8;
@@ -88,7 +88,7 @@ body{
 
 }
 
-.right{
+.right1, .right2{
 	float: left;
 	width: 25%;
 	background-color: #634BEB;

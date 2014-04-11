@@ -71,13 +71,27 @@ $(document).on('ready', function() {
 
 // -------------BOOK COLUMN------------
 // Update list of favorite books from form input
-	$('#books').blur(function(){
 
-		$('#bookPar').append("<li>" + $('#books').val() + "</li>");
+	// inputs updated on blur
+	// $('#books').blur(function(){
 
+	// 	$('#bookPar').append("<li>" + $('#books').val() + "</li>");
+
+	// });
+
+// inputs updated on enter key press
+	$('#books').keydown(function(e){
+
+		if(($(this).val() !== '')&&(e.keyCode === 13)){
+
+				$('#bookPar').append("<li>" + $(this).val() + "</li>");
+				$(this).val('');
+
+		}
 	});
+
 // Enable show and hide function of favorite books list
-	$('.left').click(function(){
+	$('.left1').click(function(){
 		$('#bookPar').slideToggle();
 	})
 
@@ -85,19 +99,33 @@ $(document).on('ready', function() {
 // Update bio information from form input
 	$('#bio').blur(function(){$('#bioPar').text($('#bio').val())});
 // Enable show and hide function of bio section
-	$('.mid').click(function(){
+	$('.mid1').click(function(){
 		$('#bioPar').slideToggle();
 	})
 
 // --------------Libraries Column-----------
 // Update favorite libraries from form input
-	$('#libs').blur(function(){
 
-		$('#jsPar').append("<li>" + $('#libs').val() + "</li>");
+	// inputs updated on blur
+	// $('#libs').blur(function(){
 
-	});
+	// 	$('#jsPar').append("<li>" + $('#libs').val() + "</li>");
+
+	// });
+
+// inputs updated on enter key press
+$('#libs').keydown(function(e){
+
+	if(($(this).val() !== '')&&(e.keyCode === 13)){
+
+			$('#jsPar').append("<li>" + $(this).val() + "</li>");
+			$(this).val('');
+
+	}
+});
+
 // Enable show and hide function of libraries column
-	$('.right').click(function(){
+	$('.right1').click(function(){
 		$('#jsPar').slideToggle();
 	})
   
